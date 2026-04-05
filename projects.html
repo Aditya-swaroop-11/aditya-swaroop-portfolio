@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Aditya Swaroop</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <nav class="navbar">
+    <a class="nav-logo" href="index.html">ADITYA SWAROOP</a>
+    <ul class="nav-links">
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-wrapper">
+    <section class="section">
+      <div class="section-label">FEATURED WORK</div>
+      <h1 class="section-title">Projects built around real-world problem solving.</h1>
+
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="dev">DEVELOPMENT</button>
+        <button class="filter-btn" data-filter="design">DESIGN</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- CLINIC PROJECT -->
+        <div class="project-card-modern" data-category="dev">
+          <div class="project-thumbnail" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="clinic">
+            <img src="assets/images/clinic/image.jpg" alt="Clinic Management System" class="img-fluid">
+            <div class="project-overlay">
+              <span class="view-btn">View Gallery</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Clinic Management System</h3>
+            <p class="project-desc">Clinic Management System is a desktop-based application designed to simplify and organize daily clinical operations. The system helps manage patient records, appointments, billing details, and basic administrative tasks through a structured and user-friendly interface. <br><br>
+              The project focuses on improving efficiency and reducing manual record-keeping by providing a centralized digital solution. It allows quick access to patient information, supports accurate data storage, and ensures smoother workflow within a clinical environment.</p>
+            <div class="project-platforms">
+              <span class="platform-badge">Python</span>
+              <span class="platform-badge">SQLite</span>
+              <span class="platform-badge">VS Code</span>
+              <span class="platform-badge">tkinter</span>
+              <span class="platform-badge">PIL (pillow)</span>
+              <span class="platform-badge">matplotlib</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMPUTER NETWORKS PROJECT -->
+        <div class="project-card-modern" data-category="dev">
+          <div class="project-thumbnail" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="computer-networks">
+            <img src="assets/images/computer networks/image.jpg" alt="Network Routing Protocol" class="img-fluid">
+            <div class="project-overlay">
+              <span class="view-btn">View Gallery</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Distributor-Retailer networking</h3>
+            <p class="project-desc">The Distributor–Retailer Networking System is a network simulation project developed using Cisco Packet Tracer to demonstrate reliable communication between distributors and retailers through a structured and secure network infrastructure. The project focuses on designing and configuring network topology that enables efficient data exchange across multiple locations.<br><br>
+
+The system includes configuration of routers, switches, and end devices, implementing IP addressing, subnetting, and routing protocols to ensure stable connectivity. It simulates how business entities can share information such as inventory updates, order details, and communication data in a controlled network environment.</p>
+            <div class="project-platforms">
+              <span class="platform-badge">Cisco packet tracer</span>
+              <span class="platform-badge">Networking</span>
+              <span class="platform-badge">Router</span>
+              <span class="platform-badge">Switch</span>
+              <span class="platform-badge">Subnetting</span>
+              <span class="platform-badge">IP Addressing</span>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- DIGITAL ELECTRONICS PROJECT -->
+        <div class="project-card-modern" data-category="dev">
+          <div class="project-thumbnail" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="digital">
+            <img src="assets/images/digital/image.jpg" alt="Digital Electronics Design" class="img-fluid">
+            <div class="project-overlay">
+              <span class="view-btn">View Gallery</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Interactive Alphabet Learning Toy</h3>
+            <p class="project-desc">The Interactive Alphabet Learning Toy is an educational hardware project developed to help children learn alphabets through visual interaction. The system allows users to press alphabet keys, and the corresponding letter is displayed by glowing on a custom-built 8×8 LED matrix.<br><br>
+
+The project integrates an ESP32 microcontroller, logic ICs, and a handmade LED matrix to control the illumination of LEDs in specific patterns representing each alphabet. The design demonstrates understanding of digital electronics, microcontroller programming, and circuit integration to create an engaging and interactive learning tool.</p>
+            <div class="project-platforms">
+              <span class="platform-badge">Arduino IDE</span>
+              <span class="platform-badge">ESP32-Microcontroller</span>
+              <span class="platform-badge">LED Matrix</span>
+              <span class="platform-badge">Circuit Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IoT PROJECT -->
+        <div class="project-card-modern" data-category="dev">
+          <div class="project-thumbnail" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="iot">
+            <img src="assets/images/iot/image.png" alt="IoT Smart Home System" class="img-fluid">
+            <div class="project-overlay">
+              <span class="view-btn">View Gallery</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Accident Detection & Emergency Alert System</h3>
+            <p class="project-desc">This IOT based system continuously monitors the movement of a vehicle and automatically identifies accident situations based on sudden abnormal changes. When a crash is detected, the device immediately sends an emergency alert along with the victim’s live location to nearby hospitals, police authorities, and registered family members.
+              <br><br>This helps emergency services quickly locate the accident site and provide faster medical assistance, which can be critical in saving lives. The system reduces dependency on manual reporting, especially in situations where the victim is unable to call for help.</p>
+            <div class="project-platforms">
+              <span class="platform-badge">Arduino IDE</span>
+              <span class="platform-badge">C++</span>
+              <span class="platform-badge">IoT</span>
+              <span class="platform-badge">Sensors</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SHM (Simple Harmonic Motion) PROJECT -->
+        <div class="project-card-modern" data-category="dev">
+          <div class="project-thumbnail" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="shm">
+            <img src="assets/images/shm/images.jpg" alt="Simple Harmonic Motion Analyzer" class="img-fluid">
+            <div class="project-overlay">
+              <span class="view-btn">View Gallery</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Spring's SHM Measuring Device</h3>
+            <p class="project-desc">The Spring SHM Measuring Device is a physics-based experimental system designed to measure and observe Simple Harmonic Motion (SHM) in a spring-mass setup. The device helps visualize oscillatory motion and determine parameters such as time period and frequency through practical measurement.<br><br>
+
+The project demonstrates how theoretical concepts of periodic motion can be applied using a physical system, allowing accurate observation of displacement and oscillation behaviour. By converting experimental readings into measurable outputs, the device helps in better understanding motion characteristics of springs under different loads.</p>
+            <div class="project-platforms">
+              <span class="platform-badge">Arduino IDE</span>
+              <span class="platform-badge">Arduino-Microcontroller</span>
+              <span class="platform-badge">Sensors</span>
+              <span class="platform-badge">Physics</span>
+              <span class="platform-badge">Sensor Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQL DATABASE PROJECT -->
+        <div class="project-card-modern" data-category="dev">
+          <div class="project-thumbnail" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="sql">
+            <img src="assets/images/sql/image.jpg" alt="Database Management System" class="img-fluid">
+            <div class="project-overlay">
+              <span class="view-btn">View Gallery</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Database Management System</h3>
+            <p class="project-desc">The Tax Management System is a database-driven application developed to efficiently store, manage, and process taxpayer information, payments, and related records. The system provides a structured interface for handling tax details, ensuring organized data storage and easy retrieval of financial information.<br><br>
+
+The project integrates a SQL database with a Python-based frontend, allowing users to perform operations such as adding records, updating tax details, viewing payment information, and maintaining accurate data management. The system reduces manual effort and improves accuracy by automating common administrative tasks.</p>
+            <div class="project-platforms">
+              <span class="platform-badge">MySQL</span>
+              <span class="platform-badge">Database Design</span>
+              <span class="platform-badge">ER Diagrams</span>
+              <span class="platform-badge">Python</span>
+              <span class="platform-badge">DBMS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- WEB DEVELOPMENT PROJECT -->
+        <div class="project-card-modern" data-category="dev">
+          <div class="project-thumbnail" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="web">
+            <img src="assets/images/web/image.webp" alt="Web Application" class="img-fluid">
+            <div class="project-overlay">
+              <span class="view-btn">View Gallery</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Watch-X , Web Application</h3>
+            <p class="project-desc">The Watch Management Web Application is an online platform designed for watch enthusiasts to explore and select different types of watches in one place. The website allows users to browse categories such as mechanical, automatic, digital, analog, and smart watches without needing to visit multiple websites.<br><br>
+
+The application provides a structured and visually organized interface that helps users easily compare styles and choose watches based on their preferences. It focuses on improving user convenience by bringing multiple watch categories together into a single platform, simplifying the search and selection process.</p>
+            <div class="project-platforms">
+              <span class="platform-badge">HTML</span>
+              <span class="platform-badge">CSS</span>
+              <span class="platform-badge">JavaScript</span>
+              <span class="platform-badge">Pluggins</span>
+              <span class="platform-badge">Bootstrap</span>
+              <span class="platform-badge">Responsive Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HELMET DESIGN PROJECT -->
+        <div class="project-card-modern" data-category="design">
+          <div class="project-thumbnail" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="helmet">
+            <img src="assets/images/helmet design/image.png" alt="Helmet Design Case Study" class="img-fluid">
+            <div class="project-overlay">
+              <span class="view-btn">View Gallery</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Smart Helmet Design</h3>
+            <p class="project-desc">The Helmet Design Project focuses on improving safety, comfort, and usability through a user-centered design approach. The project involved conducting user research to understand common challenges faced by helmet users, such as discomfort during long usage, limited visibility, and lack of smart safety features.<br><br>
+
+Based on research insights, the design emphasizes ergonomic structure, improved fit, and practical features that enhance both protection and convenience. The goal was to create a helmet concept that balances safety requirements with user comfort and modern design expectations.</p>
+            <div class="project-platforms">
+              <span class="platform-badge">Figma</span>
+              <span class="platform-badge">UI/UX Design</span>
+              <span class="platform-badge">Prototyping</span>
+              <span class="platform-badge">Design System</span>
+              <span class="platform-badge">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROAD ACCIDENT PREDICTION DESIGN PROJECT -->
+        <div class="project-card-modern" data-category="design">
+          <div class="project-thumbnail" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="accident">
+            <img src="assets/images/Road accident pridiction/image.webp" alt="Road Accident Prediction UI" class="img-fluid">
+            <div class="project-overlay">
+              <span class="view-btn">View Gallery</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Accident Prediction & Prevention Device</h3>
+            <p class="project-desc">The Accident Prediction and Prevention Device is designed to improve road safety by identifying potential collision risks in advance and alerting the user in real time. The system continuously monitors the distance between vehicles or obstacles and provides early warnings when objects come too close.<br><br>
+
+The device displays distance information and risk level on a screen, helping the user understand whether the situation is safe, moderate, or dangerous. By giving timely alerts, the system helps drivers take preventive action and avoid possible accidents.</p>
+            <div class="project-platforms">
+              <span class="platform-badge">Figma</span>
+              <span class="platform-badge">Product Design</span>
+              <span class="platform-badge">Wireframing</span>
+              <span class="platform-badge">Real-time Monitoring</span>
+              <span class="platform-badge">Arduino IDE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PROJECT IMAGE GALLERY MODAL -->
+  <div class="project-modal" id="projectModal">
+    <div class="project-modal-overlay" id="projectModalOverlay"></div>
+    <div class="project-modal-window">
+      <button class="project-modal-close" id="projectModalClose">✕</button>
+      <h4 class="project-modal-heading" id="projectModalLabel">Project Gallery</h4>
+
+      <div class="modal-carousel">
+        <button class="carousel-btn carousel-prev" id="carouselPrev">‹</button>
+        <img src="" alt="Project view" id="projectModalImage" class="carousel-image" />
+        <button class="carousel-btn carousel-next" id="carouselNext">›</button>
+      </div>
+
+      <div class="carousel-caption" id="projectModalCaption"></div>
+      <div class="carousel-thumbs" id="carouselIndicators"></div>
+    </div>
+  </div>
+
+  <footer>
+    <span class="foot-logo">ADITYA SWAROOP</span>
+    <div class="foot-links">
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <span class="foot-copy">© 2026 — BUILT WITH HTML, CSS &amp; JS</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>

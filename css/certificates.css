@@ -1,0 +1,93 @@
+/* certificates.css */
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.cert-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px; overflow: hidden;
+  cursor: none;
+  transition: transform .3s, box-shadow .3s, border-color .3s;
+}
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0,0,0,.4);
+  border-color: rgba(142,207,184,.25);
+}
+.cert-thumb {
+  width: 100%; aspect-ratio: 4/3;
+  background: #242c29;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 48px; position: relative; overflow: hidden;
+}
+.cert-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.cert-thumb .cert-overlay {
+  position: absolute; inset: 0;
+  background: rgba(142,207,184,.08);
+  opacity: 0; display: flex; align-items: center; justify-content: center;
+  transition: opacity .25s;
+  font-family: 'Space Mono', monospace; font-size: 11px;
+  letter-spacing: .12em; color: var(--accent); font-weight: 700;
+}
+.cert-card:hover .cert-overlay { opacity: 1; }
+.cert-info { padding: 20px; }
+.cert-issuer {
+  font-family: 'Space Mono', monospace; font-size: 9px;
+  letter-spacing: .16em; color: var(--accent); margin-bottom: 6px;
+}
+.cert-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 18px; color: var(--white); margin-bottom: 6px; line-height: 1.3;
+}
+.cert-date {
+  font-family: 'Space Mono', monospace; font-size: 10px;
+  color: var(--muted); letter-spacing: .1em;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed; inset: 0; z-index: 1000;
+  display: none; align-items: center; justify-content: center;
+}
+.lightbox.open { display: flex; }
+.lightbox-bg {
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,.85); backdrop-filter: blur(8px);
+}
+.lightbox-content {
+  position: relative; z-index: 1;
+  background: var(--card); border-radius: 20px;
+  padding: 32px; max-width: 980px; width: 90%;
+  max-height: 90vh; overflow: auto;
+  border: 1px solid var(--border);
+}
+.lightbox-close {
+  position: absolute; top: 16px; right: 16px;
+  background: rgba(255,255,255,.08); border: none;
+  color: var(--text); font-size: 14px; width: 32px; height: 32px;
+  border-radius: 50%; cursor: none; transition: background .2s;
+}
+.lightbox-close:hover { background: rgba(255,255,255,.15); }
+.lightbox-img {
+  width: 100%;
+  max-height: 72vh;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: #101614;
+}
+.lightbox-info h3 {
+  font-family: 'DM Serif Display', serif; font-size: 24px; color: var(--white);
+  margin-bottom: 6px;
+}
+.lightbox-info p {
+  font-family: 'Space Mono', monospace; font-size: 11px;
+  letter-spacing: .12em; color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .cert-grid { grid-template-columns: 1fr; }
+}

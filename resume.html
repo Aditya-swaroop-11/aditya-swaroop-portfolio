@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | Aditya Swaroop</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .resume-layout { display:grid; grid-template-columns: 1.1fr .9fr; gap: 28px; align-items:start; }
+    .resume-card, .resume-preview {
+      background: var(--card); border:1px solid var(--border); border-radius:20px; padding:24px;
+    }
+    .resume-subtitle { font-family:'Space Mono', monospace; font-size:10px; letter-spacing:.14em; color:var(--accent); margin-bottom:10px; }
+    .resume-preview img { width:100%; border-radius:12px; display:block; }
+    .resume-actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+    .resume-btn {
+      display:inline-flex; align-items:center; justify-content:center; padding:12px 18px; border-radius:999px;
+      text-decoration:none; font-family:'Space Mono', monospace; font-size:11px; font-weight:700; letter-spacing:.08em;
+    }
+    .resume-btn.primary { background: var(--accent); color:#111; }
+    .resume-btn.secondary { border:1px solid rgba(255,255,255,.12); color:var(--text); }
+    .resume-list { margin-top:12px; padding-left:18px; color:var(--muted); line-height:1.8; }
+    .resume-section-block { margin-top:24px; padding-top:20px; border-top:1px solid rgba(255,255,255,.06); }
+    .resume-section-block h3 { color:var(--white); margin-bottom:8px; font-size:22px; }
+    .resume-section-block p { color:var(--muted); line-height:1.7; }
+    @media (max-width: 900px) { .resume-layout { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <nav class="navbar">
+    <a class="nav-logo" href="index.html">ADITYA SWAROOP</a>
+    <ul class="nav-links">
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-wrapper">
+    <section class="section">
+      <div class="section-label">RESUME OVERVIEW</div>
+      <h1 class="section-title">Academic background, skills, and project highlights in one place.</h1>
+
+      <div class="resume-layout reveal visible">
+        <div class="resume-card">
+          <div class="resume-subtitle">PROFILE</div>
+          <p style="font-size:16px; line-height:1.8; color:var(--text);">
+            I, Aditya Swaroop, a B.Tech Computer Science student with hands-on experience
+             in software development, embedded systems, and UI/UX design. I enjoy solving 
+             real-world problems by creating solutions that are practical, efficient, and 
+             user-friendly.
+          </p>
+
+          <div class="resume-section-block">
+            <h3>Education</h3>
+            <ul class="resume-list">
+              <li><strong style="color:var(--white);">B.Tech CSE</strong> — Avantika University (2023–2027)</li>
+              <li><strong style="color:var(--white);">Intermediate</strong> — Guru Gobind Singh Public School (2019–2021)</li>
+              <li><strong style="color:var(--white);">Board</strong> — KD International School (2017–2019)</li>
+            </ul>
+          </div>
+
+          <div class="resume-section-block" id="spring-shm">
+            <h3>Spring's SHM Measuring Device</h3>
+            <p>An Arduino-based project that helps students learn harmonic motion through measurement, visualization, and classroom-friendly experimentation.</p>
+          </div>
+
+          <div class="resume-section-block" id="accident-alert">
+            <h3>Accident Detection and Emergency Alert System</h3>
+            <p>A safety-focused IoT system that detects accidents in real time and sends emergency location alerts for faster help and support.</p>
+          </div>
+
+          <div class="resume-section-block" id="portfolio-site">
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal site built to showcase projects, certifications, contact details, and resume content in a clean linked experience.</p>
+          </div>
+
+          <div class="resume-actions">
+            <a class="resume-btn primary" href="Resume/Aditya_Swaroop_Resume.pdf" target="_blank" rel="noreferrer">OPEN PDF</a>
+            <a class="resume-btn secondary" href="contact.html">CONTACT ME</a>
+          </div>
+        </div>
+
+        <div class="resume-preview">
+          <div class="resume-subtitle">RESUME PREVIEW</div>
+          <img src="Resume/Aditya_Swaroop_Resume.jpg" alt="Aditya Swaroop resume preview" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="foot-logo">ADITYA SWAROOP</span>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <span class="foot-copy">RESUME PREVIEW + DOWNLOAD READY</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
